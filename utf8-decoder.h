@@ -322,7 +322,7 @@ static void str_to_bit_decoded(const char *utf8_chr_str, char *utf8_str)
         ++ i;
     }
 
-    utf8_str[j + 1] = STR_END;
+    utf8_str[j] = STR_END;
 }
 
 static void utf8decode(const char *hex_str, char *utf8_str)
