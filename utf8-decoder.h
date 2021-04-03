@@ -357,7 +357,8 @@ static char *utf8decode(const char *hex_str)
     }
 
     char* output = CAST(char*, calloc(5, sizeof(char)));
-    strcpy_s(output, 5, buf);
+    for (int i = 0; i < 5; ++i)
+        output[i] = buf[i];
     return output;
 }
 
