@@ -356,7 +356,10 @@ static char *utf8decode(const char *hex_str)
             break;
     }
 
-    return strcpy(CAST(char*, calloc(5, sizeof(char))), buf);
+    char* output = CAST(char*, calloc(5, sizeof(char)));
+    for (int i = 0; i < 5; ++i)
+        output[i] = buf[i];
+    return output;
 }
 
 /* Bonus function */
