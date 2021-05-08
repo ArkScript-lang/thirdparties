@@ -1,0 +1,3 @@
+[submodule "utf8_decoder"]
+	path = utf8_decoder
+	url = https://github.com/PierrePharel/utf8_decoder.git
